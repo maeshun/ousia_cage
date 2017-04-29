@@ -1,0 +1,229 @@
+.cg
+  &__feed
+    width calc(100% - 88px)
+    margin 0 auto 0
+    padding 0 0 80px 50px
+    z-index 2
+    &--top
+      .cg__feed__item--type1
+      .cg__feed__item--type2
+        .cg__feed__text
+          display none
+    &__items
+      padding 200px 0 0 0
+      z-index:0;
+      &--mode-sp
+        padding:80px 0 0 0;
+        .cg__feed__item
+          margin 0 0 0 0;
+    &__item
+      margin 0
+      padding 0 0 80px 0
+      width 100%
+      opacity 0
+      &:hover
+        cursor pointer
+      &--type1
+        .cg__feed__image
+          padding: 5px 0 0 0;
+        .cg__feed__account
+          display none
+      &--type3
+        .cg__feed__title
+        .cg__feed__account
+        .cg__feed__image
+        .cg__feed__pDate
+          display none
+        .cg__feed__text
+          font-size 60px
+          font-weight bold
+          letter-spacing 0.05em
+          line-height 1.2em
+          &:hover
+            opacity .5
+    &__title
+      padding 0 0 0 0
+      font-size 20px
+      font-weight bold
+      letter-spacing 0.01em
+    &__image
+      padding 10px 0 0 0
+      margin 0 0 15px 0
+      width 100%
+      &:hover
+        opacity .5!important
+      img
+        width 100%
+        height auto
+    &__text
+      position relative
+      padding 30px 0 0 0
+      font-size 11px
+      letter-spacing 0.1em
+      line-height 2em
+      p
+        display inline-block
+    &__account
+      padding 0 0 0 0
+      font-size 12px
+      font-weight bold
+      letter-spacing 0.05em
+      &:hover
+        a
+          cursor: pointer
+          easing()
+          opacity .5
+    &__pDate
+      display block
+      padding 10px 0 0 0
+      font-size 12px
+      letter-spacing 0.04em
+    &__href
+      position absolute
+      top 0
+      left 0
+      display block
+      width 100%
+      height 100%
+    &__subTitle
+      font-size 12px
+      line-height 1.8em
+      letter-spacing .05em
+    &--article
+      max-width 490px
+      padding 0 0 80px 0
+      opacity 0
+      .cg__feed__items
+        padding 200px 0 0 0
+      .cg__feed__item
+          cursor default
+          opacity 1
+          margin 0
+      .cg__feed__title
+        font-size 22px
+        font-weight bold
+        margin 0 0 0 0
+        letter-spacing 0.05em
+      .cg__feed__image
+        padding 10px 0 0 0
+        opacity 1!important
+      .cg__feed__pDate
+        margin 0 0 0 0
+        padding 10px 0
+        font-size 20px
+        letter-spacing 0.05em
+      .cg__feed__subTitle
+        margin 0 0 0 0
+        padding 20px 0 0 0
+        font-size 14px
+        letter-spacing 0.05em
+        line-height 1.5em
+      .cg__feed__text
+        margin 0 0 0 0
+        padding 20px 0 0 0
+        font-size 12px
+        letter-spacing 0.12em
+        line-height 2em
+        text-align justify
+        a
+          &:hover
+            opacity .5
+      .cg__feed__image
+      .cg__feed__text
+      .cg__feed__account
+      .cg__feed__pDate
+      .cg__feed__title
+          p
+          span
+            padding 0 0 0 0
+            background #fff
+          img
+            filter: grayscale(0%);
+    &--list
+      max-width 460px
+      padding 0 0 80px 0
+      opacity 0
+      .cg__feed__items
+        padding 200px 0 0 0
+      .cg__feed__item
+        cursor pointer
+        opacity 1
+        margin 0
+        padding 0 0 70px 0
+      .cg__feed__text
+        padding 10px 0 0 0
+        font-size 11px
+        letter-spacing 0.05em
+        line-height 1.5em
+      .cg__feed__subTitle
+        font-size 12px
+        letter-spacing .1em
+        line-height 1.5em
+      .cg__feed__pDate
+        padding 15px 0 0 0
+        font-size 11px
+        letter-spacing 0.05em
+        font-weight bold
+      .cg__feed__image
+        position relative
+        width 100%
+        height 170px
+        overflow hidden
+        margin 0 0 11px 0
+        img
+          position absolute
+          top 0
+          left 0;
+      .cg__feed__image
+      .cg__feed__text
+      .cg__feed__account
+      .cg__feed__pDate
+          p
+          span
+            padding 0 0 0 0
+            background #fff
+          img
+            filter: grayscale(0%);
+@media screen and (max-width: 1024px)
+  .cg
+    &__feed
+      width 100%
+      width calc(100% - 30px)
+      margin 0 auto 0
+      display block
+      padding 30px 0 0 0
+      &--list
+      &--article
+        padding 0 0 0 0
+        opacity 1
+      &--article
+        .cg__feed__items
+          padding 110px 0 0 0
+      &--list
+        .cg__feed__items
+          padding 155px 0 0 0
+      &__item
+        width 100%;
+        &__inner
+          display block
+      &__title
+      &__text
+      &__account
+      &__pDate
+        margin 0 0 0 0
+      &__image
+      &__title
+      &__text
+      &__account
+      &__pDate
+      &__subTitle
+          p
+          span
+            padding 0 0 0 0
+            background #fff
+          img
+            filter: grayscale(0%);
+      &__text
+        word-wrap break-word
+        p
+          display inline

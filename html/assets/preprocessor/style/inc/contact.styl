@@ -1,0 +1,113 @@
+.cg
+  &__contact
+    text-align left
+    margin 168px auto 0
+    max-width 1500px;
+    &__title
+      font-size 13px
+      letter-spacing 0.05em
+      font-weight bold
+    &__form
+      margin 100px 0 0 0
+      &__item
+        width 100%
+        text-align left
+        margin 32px 0 0 0
+        &:first-child
+          margin 0 0 0 0
+        &__input
+          border-bottom 2px solid #000
+          p
+            font-size 12px
+            line-height 2.5em
+            letter-spacing 0.05em
+            font-weight bold
+          input
+            width 100%
+            font-size 12px
+            line-height 2.5em
+            letter-spacing 0.05em
+            &:focus
+              outline 0
+              &:placeholder-shown
+                  color #ebebeb
+                  line-height 1em
+              &::-webkit-input-placeholder
+                  color: #ebebeb
+                  font-weight bold
+                  line-height 1em
+              &:-moz-placeholder
+                  color: #ebebeb
+                  opacity: 1
+                  font-weight bold
+                  line-height 1em
+              &::-moz-placeholder
+                  color: #ebebeb
+                  opacity: 1
+                  font-weight bold
+                  line-height 1em
+              &:-ms-input-placeholder
+                  color: #ebebeb
+                  font-weight bold
+                  line-height 1em
+            &:placeholder-shown
+                color: black
+                line-height 1em
+            &::-webkit-input-placeholder
+                color: black
+                font-weight bold
+                line-height 1em
+            &:-moz-placeholder
+                color: black
+                opacity: 1
+                font-weight bold
+                line-height 1em
+            &::-moz-placeholder
+                color: black
+                opacity: 1
+                font-weight bold
+                line-height 1em
+            &:-ms-input-placeholder
+                color: black
+                font-weight bold
+                line-height 1em
+          textarea
+            width 100%
+            font-size 12px
+            letter-spacing 0.05em
+            min-height 140px
+            &:focus
+              outline 0
+              border 1px solid #c3c3c3
+          // &--inquiry
+          //   padding 218px 0 0 0
+      &__submit
+        margin 165px auto 0
+        padding 0 0 141px 0
+        width 200px
+        &:hover
+          opacity:0.4;
+        input
+          display block
+          width 200px
+          font-size 13px
+          font-weight bold
+          letter-spacing 0.05em
+          padding 10px 10px
+          color #fff
+          background-color #000
+@media screen and (min-width: 1280px)
+  .cg
+    &__contact
+      padding 0 80px
+@media screen and (max-width: 1280px)
+  .cg
+    &__contact
+      padding 0 80px
+@media screen and (max-width: 1024px)
+  .cg
+    &__contact
+      padding 0
+      &__form
+        &__submit
+          opacity 1!important

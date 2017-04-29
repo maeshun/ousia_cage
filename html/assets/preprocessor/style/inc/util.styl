@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import 'sanitize.styl'
+
+html,body,h1,h2,h3,h4,h5,iframe,button,menu,main,article,time,div,p,dl,dd,dt,ul,ol,li
+    margin:0
+    padding:0
+li,dl,dd,dt
+    list-style:none
+img
+    vertical-align:top
+
+.cf:after
+.cf:before
+    content: " ";
+    display: table;
+
+
+.cf:after
+    clear: both;
+
+.cf {}
+
+// :placeholder-shown{
+//     color: black
+// }
+// ::-webkit-input-placeholder{
+//     color: black
+//     font-weight bold
+// }
+// :-moz-placeholder{
+//     color: black
+//     opacity: 1
+//     font-weight bold
+// }
+// ::-moz-placeholder{
+//     color: black
+//     opacity: 1
+//     font-weight bold
+// }
+// :-ms-input-placeholder{
+//     color: black
+//     font-weight bold
+// }
+
+textarea:placeholder-shown{
+    color: black
+    vertical-align bottom
+}
+textarea::-webkit-input-placeholder{
+    color: black
+    font-weight bold
+}
+textarea:-moz-placeholder{
+    color: black
+    opacity: 1
+    font-weight bold
+}
+textarea::-moz-placeholder{
+    color: black
+    opacity: 1
+    font-weight bold
+}
+textarea:-ms-input-placeholder{
+    color: black
+    font-weight bold
+}
+
+:-moz-selection{background-color:#e1e1e1 ;color:#000;text-shadow:none}
+::selection{background-color:#e1e1e1 ;color:#000;text-shadow:none}

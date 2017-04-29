@@ -1,0 +1,256 @@
+@import 'inc/util'
+@import 'inc/mixin'
+@import 'inc/in_common'
+@import 'inc/feed'
+@import 'inc/about'
+@import 'inc/contact'
+
+html,body
+  height 100%
+
+a
+  color #000
+
+.cg
+  position: relative
+  min-height 100%
+  &__header
+    transform: translate3d(0, 0, 0);
+    position fixed
+    top 28px
+    left 84px
+    display flex
+    z-index 3
+    width calc(100% - 140px)
+  &__logo
+    flex-flow column wrap
+    width 90px
+    margin-right auto
+    img
+      width 100%
+      height auto
+  &__gnav
+    margin-left 63px
+    flex-flow column wrap
+    &__contents
+        transform: translate3d(0, 0, 0);
+        position fixed
+        top 0
+        left 0
+        width 100%
+        height 100%
+        display none
+        background #fff
+        z-index 2
+        &__items
+          position fixed
+          text-align center
+          top 50%
+          left 50%
+          transform: translate3d(-50%, -50%, 0);
+        &__item
+          font-family Arial
+          font-size 2.0rem
+          letter-spacing 0.05em
+          font-weight bold
+          margin 40px 0 0 0
+          &:hover
+            opacity .4
+          &:first-child
+            margin 15px 0 0 0
+    &__items
+      position relative
+      text-align center
+      margin 8px 0 0 0
+      display flex
+    &__item
+      font-family Arial
+      font-size 20px
+      letter-spacing 0.05em
+      margin 20px 0 0 0
+      position relative
+      flex-flow column wrap
+      &--menu-btn
+        margin 24px 0 0 0
+        font-size 15px
+        font-weight bold
+      a
+        width 100%
+        display block
+        position relative
+        padding 0 3px
+
+      &--close
+        position: relative
+        width: 30px
+        height 30px
+        display none
+        margin: 28px 12px 0 0;
+        &--line-1
+          position: absolute
+          top 2px
+          left 0
+          width: 100%
+          height 4px
+          background-color #000
+          transform: rotate(45deg);
+        &--line-2
+          position: absolute
+          top 2px
+          left 0
+          width: 100%
+          height 4px
+          background-color #000
+          transform: rotate(-45deg);
+      &:hover
+        a
+          easing()
+          opacity .5
+  &__contents
+    position: relative
+    min-height 100%
+    &__fill
+      transform: translate3d(0, 0, 0);
+      position absolute
+      z-index:1;
+      &--t
+        position fixed
+        top 0
+        // left 40px
+        left 0
+        background-color #fff
+        width 100%
+        // width calc(100% - 80px)
+        height 40px
+        z-index 0
+      &--l
+        top 0
+        left 0
+        background-color #fff
+        width 40px
+        height 100%
+      &--b
+        bottom 0
+        left 40px
+        background-color #fff
+        width calc(100% - 80px)
+        height 40px
+      &--r
+        top 0
+        right 0
+        background-color #fff
+        width 40px
+        height 100%
+    &__frame
+      transform: translate3d(0, 0, 0);
+      position fixed
+      z-index:1;
+      &--t
+        top 40px
+        left 40px
+        width calc(100% - 80px)
+        height 4px
+        background-color #000;
+        z-index 3
+      &--l
+        position absolute
+        top 40px
+        left 40px
+        width 4px
+        height calc(100% - 80px)
+        background-color #000;
+        z-index -1
+      &--b
+        position absolute
+        bottom 40px
+        left 40px
+        width calc(100% - 80px)
+        height 4px
+        background-color #000;
+        z-index -1
+      &--r
+        position absolute
+        top 40px
+        right 40px
+        width 4px
+        height calc(100% - 80px)
+        background-color #000;
+        z-index -1
+.js-menu-open
+  overflow hidden
+  height 100%
+  .cg__gnav__contents
+    display block
+  .cg__gnav__item--menu-btn
+    display none
+  .cg__gnav__item--close
+    display block
+  .cg__inpage
+    display none
+  .cg__contents__frame
+    display none
+@media screen and (max-width: 1024px)
+  .cg
+    &__header
+      position fixed
+      top 20px
+      left 15px
+      width calc(100% - 30px)
+    &__gnav
+      margin 0 0 0 0
+      &__item
+        &--menu-btn
+          margin 16px 0 0 0
+          padding 0 4px 0 0
+          font-size 15px
+          font-weight bold
+        &--close
+          margin 20px 15px 0 0
+      &__contents
+        &__item
+          margin 40px 0 0 0
+          opacity 1!important
+          &:first-child
+            margin 40px 0 0 0
+    &__logo
+      margin-right auto
+      width 90px
+      img
+        margin-top 2px
+        width 100%
+        height auto
+    &__contents
+      &__fill
+        display none
+        &--t
+          left 20px
+          background-color #fff
+          width calc(100% - 20px)
+          height 20px
+        &--l
+          width 20px
+        &--b
+          left 20px
+          width calc(100% - 40px)
+          height 20px
+        &--r
+          width 20px
+      &__frame
+        z-index:1;
+        display none
+        &--t
+          top 20px
+          left 20px
+          width calc(100% - 40px)
+        &--l
+          top 20px
+          left 20px
+          height calc(100% - 40px)
+        &--b
+          bottom 20px
+          left 20px
+          width calc(100% - 40px)
+        &--r
+          top 20px
+          right 20px
+          height calc(100% - 40px)

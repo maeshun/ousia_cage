@@ -1,0 +1,64 @@
+.cg
+  &__about
+    margin 0 auto 0
+    padding 110px 0 0 0
+    max-width 1500px;
+    text-align left
+    &__title
+      font-size 14px
+      letter-spacing 0.05em
+    &__address
+      margin 20px 0 0 0
+      font-size 12px
+      letter-spacing 0.12em
+      line-height 1.8em
+      a
+        &:hover
+          opacity .4
+    &__lead
+      &__items
+        margin 150px 0 0 0
+      &__item
+        margin 50px 0 0 0
+        font-size 12px
+        line-height 2em
+        &--jp
+          letter-spacing 0.12em
+        &--en
+          letter-spacing 0.05em
+        &:first-child
+          margin 0 0 0 0
+    &__map
+      margin 180px 0 0 0
+      text-align left
+      &__iframe
+        position relative
+        z-index -1
+        iframe
+          width 100%
+          height 350px
+      &__aside
+        font-size 12px
+        letter-spacing 0.12em
+        margin 21px 0 0 0
+@media screen and (min-width: 1280px)
+  .cg
+    &__about
+      padding 0 80px
+@media screen and (max-width: 1280px)
+  .cg
+    &__about
+      padding 0 80px
+@media screen and (max-width: 1024px)
+  .cg
+    &__about
+      margin 0 auto 0
+      padding 0px 0 0
+      &__map
+        &__iframe
+          iframe
+            width 100%
+            height 200px
+    &__address
+      a
+        opacity 1!important

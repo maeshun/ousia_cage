@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <!-- Facebook:OG -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <title>CAGE GALLERY</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="cg">
+    <header class="cg__header">
+      <h1 class="cg__logo">
+        <a href="index.html">
+          <picture>
+            <source media="(max-width: 1024px)" srcset="assets/img/common/logo-sp.svg">
+            <img src="assets/img/common/logo-pc.svg" alt="CAGE GALLERY">
+          </picture>
+        </a>
+      </h1>
+      <nav class="cg__gnav">
+        <ul class="cg__gnav__items">
+          <li class="cg__gnav__item cg__gnav__item--menu-btn">
+            <a>
+              MENU
+            </a>
+          </li>
+          <li class="cg__gnav__item cg__gnav__item--close">
+            <a>
+              <p class="cg__gnav__item--close--line-1"></p>
+              <p class="cg__gnav__item--close--line-2"></p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+    <div class="cg__contents">
+
+      <p class="cg__contents__fill cg__contents__fill--t"></p>
+      <p class="cg__contents__fill cg__contents__fill--l"></p>
+      <p class="cg__contents__fill cg__contents__fill--r"></p>
+      <p class="cg__contents__fill cg__contents__fill--b"></p>
+
+      <p class="cg__contents__frame cg__contents__frame--t"></p>
+      <p class="cg__contents__frame cg__contents__frame--l"></p>
+      <p class="cg__contents__frame cg__contents__frame--r"></p>
+      <p class="cg__contents__frame cg__contents__frame--b"></p>
+
+      <div class="cg__inpage">
+        <!-- About -->
+        <div class="cg__about">
+          <div class="cg__about__title">
+            <h2>
+              CAGE GALLERY
+            </h2>
+          </div>
+          <div class="cg__about__address">
+            〒150-0013 東京都渋谷区恵比寿2-16-8 1F<br>
+            <a href="mailto:info@cagegallery.com">info@cagegallery.com</a>
+          </div>
+          <ul class="cg__about__lead__items">
+            <li class="cg__about__lead__item cg__about__lead__item--jp">
+              恵比寿と広尾<br>
+              窓と枠<br>
+              作品と広告<br>
+              CAGEと掲示<br>
+              解釈は多面的であり対象は複合的である。
+            </li>
+            <li class="cg__about__lead__item cg__about__lead__item--en">
+              Ebisu and Hiroo<br>
+              Window and Frame<br>
+              Art and Publicity<br>
+              CAGE and POST<br>
+              Interpretations are various and objects are complex.
+            </li>
+          </ul>
+
+          <div class="cg__about__map">
+            <div class="cg__about__map__iframe">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.2240255990587!2d139.7167749152817!3d35.64685178020245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b13039963b7%3A0x5ef60acf2212cef4!2z44CSMTUwLTAwMTMg5p2x5Lqs6YO95riL6LC35Yy65oG15q-U5a-_77yS5LiB55uu77yR77yW4oiS77yY!5e0!3m2!1sja!2sjp!4v1491811458795&" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="cg__about__map__aside">
+              〒150-0013 東京都渋谷区恵比寿2-16-8 1F
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Contact -->
+        <div class="cg__contact">
+
+          <div class="cg__contact__title">
+            <h2>
+              CONTACT
+            </h2>
+          </div>
+
+          <div class="cg__contact__form">
+            <form action="./mail.php" method="post" name="mailform" id="mailform">
+              <ul class="cg__contact__form__items">
+                <li class="cg__contact__form__item">
+                  <p class="cg__contact__form__item__input">
+                    <input type="text" name="name" title="NAME" placeholder="NAME" class="cg__contact__form__item__input__name">
+                  </p>
+                </li>
+                <li class="cg__contact__form__item">
+                  <p class="cg__contact__form__item__input">
+                    <input type="text" name="mailaddress" title="MAIL ADDRESS" placeholder="MAIL ADDRESS" class="cg__contact__form__item__input__mailaddress">
+                  </p>
+                </li>
+                <li class="cg__contact__form__item">
+                  <p class="cg__contact__form__item__input">
+                    <input type="text" name="subject" title="SUBJECT" placeholder="SUBJECT" class="cg__contact__form__item__input__subject">
+                  </p>
+                </li>
+                <li class="cg__contact__form__item">
+                  <div class="cg__contact__form__item__input cg__contact__form__item__input--inquiry">
+                    <textarea name="inquiry" rows="10" title="INQUIRY"  class="cg__contact__form__item__input__inquiry" id="inquiry"></textarea>
+                    <p><label for="inquiry">INQUIRY</label></p>
+                  </div>
+                </li>
+              </ul>
+              <p class="cg__contact__form__submit">
+                <input type="submit" name="SEND" value="SEND" id="mailform_submit">
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cg__gnav__contents">
+        <ul class="cg__gnav__contents__items">
+          <li class="cg__gnav__contents__item">
+            <a href="index.html">
+              TOP
+            </a>
+          </li>
+          <li class="cg__gnav__contents__item">
+            <a href="about.html">
+              ABOUT
+            </a>
+          </li>
+          <li class="cg__gnav__contents__item">
+            <a href="exhibitions.html">
+              EXHIBITIONS
+            </a>
+          </li>
+          <li class="cg__gnav__contents__item">
+            <a href="https://www.instagram.com/cage_gallery/" target="_blank">
+              INSTAGRAM
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <script src="./assets/js/cg.common.js"></script>
+  <script src="./assets/js/cg.about.js"></script>
+</body>
+</html>
